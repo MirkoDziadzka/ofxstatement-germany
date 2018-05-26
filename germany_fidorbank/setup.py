@@ -4,17 +4,17 @@
 from setuptools import find_packages
 from distutils.core import setup
 
-version = "0.0.2"
+version = "0.0.1"
 
 with open('../README.rst') as f:
     long_description = f.read()
 
-setup(name='ofxstatement-germany-1822direkt',
+setup(name='ofxstatement-germany-fidorbank',
       version=version,
-      author="Mirko Dziadzka",
-      author_email="mirko.dziadzka@gmail.com",
+      author="Kevin Kaland",
+      author_email="kevin@wizonesolutions.com",
       url="https://github.com/MirkoDziadzka/ofxstatement_germany",
-      description=("ofxstatement plugin for Frankfurter Sparkasse / 1822direkt.com"),
+      description=("ofxstatement plugin for Fidor Bank AG / banking.fidor.de"),
       long_description=long_description,
       license="GPLv3",
       keywords=["ofx", "banking", "statement"],
@@ -33,7 +33,7 @@ setup(name='ofxstatement-germany-1822direkt',
       entry_points={
           'ofxstatement':
           [
-              'germany_1822direkt = ofxstatement.plugins.germany_1822direkt:FrankfurterSparkasse1822Plugin',
+              'germany_fidorbank = ofxstatement.plugins.germany_fidorbank:FidorBankAGPlugin',
           ]
           },
       install_requires=['ofxstatement'],
